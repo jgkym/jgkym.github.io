@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+body {
+    color: #282a2b;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+}
+
+.vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+}
+
+.content {
+    margin: auto;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.row {
+    padding-top: 30px;
+}
+
+.text a:link, .text a:visited, .text a:active, .text a:hover {
+    color: red;
+}
+
+.links {
+    font-size: 48px;
+    margin-top: 40px;
+    line-height: 2em;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+a:link, a:visited, a:active, a:hover {
+    color: #282a2b;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: red;
+}
