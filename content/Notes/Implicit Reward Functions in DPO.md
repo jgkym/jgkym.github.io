@@ -1,5 +1,6 @@
 ---
-id: 202505121437
+created: 2025-05-12
+modified: 2025-05-14
 lang: ko
 tags: [ai/alignment, ai/reinforcement-learning]
 status: false

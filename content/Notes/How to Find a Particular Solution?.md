@@ -1,8 +1,8 @@
 ---
-id: 202504251029
+created: 2025-04-25
+modified: 2025-05-14
 lang: en
 tags: [math/linear-algebra]
-status: false
 ---
 One way to find a particular solution to the $Ax=b$ is to set all free variables to zero, then solve for the pivot variables.
 

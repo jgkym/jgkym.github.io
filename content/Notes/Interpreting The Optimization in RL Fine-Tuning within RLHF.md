@@ -1,5 +1,6 @@
 ---
-id: 202505041047
+created: 2025-05-04
+modified: 2025-05-14
 lang: ko
 tags: [ai/finetuning, ai/reinforcement-learning]
 status: true

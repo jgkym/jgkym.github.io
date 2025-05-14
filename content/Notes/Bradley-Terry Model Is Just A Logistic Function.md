@@ -1,11 +1,12 @@
 ---
-id: 202505112103
+created: 2025-05-11
+modified: 2025-05-14
 lang: en
 tags: [ai/alignment, ai/reinforcement-learning]
 ---
 $$
 p^{*}(y_{1}>y_{2}|x) = \frac{\exp(r^{*}(x,y_{1}))}{\exp(r^{*}(x,y_{1}))+\exp(r^{*}(x,y_{2}))}=\sigma(r^{*}(x,y_{1})-r^{*}(x,y_{2}))
-$$ 
+$$
 
 [@RafailovEtAl2024Direct{3-4}]
 

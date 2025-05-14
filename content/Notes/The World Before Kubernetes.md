@@ -1,8 +1,8 @@
 ---
-id: 202504251501
+created: 2025-04-25
+modified: 2025-05-14
 lang: ko
 tags: [cs/devops]
-status: false
 ---
 ## 문제점
 - 서버 용량을 수동으로 할당 → 유저 수 예측 어려움

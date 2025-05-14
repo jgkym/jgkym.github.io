@@ -1,8 +1,8 @@
 ---
-id: 202504251354
+created: 2025-04-25
+modified: 2025-05-14
 lang: ko
 tags: [cs/devops]
-status: false
 ---
 ## Exposing 이란?
  → 애플리케이션을 인터넷 등 **외부 네트워크에 노출**하는 행위

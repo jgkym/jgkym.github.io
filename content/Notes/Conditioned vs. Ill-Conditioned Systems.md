@@ -1,5 +1,6 @@
 ---
-id: 202505070847
+created: 2025-05-07
+modified: 2025-05-14
 lang: ko
 tags: [math/linear-algebra]
 ---

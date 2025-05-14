@@ -1,5 +1,6 @@
 ---
-id: 202504251406
+created: 2025-04-25
+modified: 2025-05-14
 lang: ko
 tags: [cs/devops]
 status: false

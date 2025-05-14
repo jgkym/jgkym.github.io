@@ -1,10 +1,8 @@
 ---
-id: 202505041406
+created: 2025-05-04
+modified: 2025-05-14
 lang:
-tags:
-  - ai/finetuning
-  - ai/reinforcement-learning
-status: false
+tags: [ai/finetuning, ai/reinforcement-learning]
 ---
 ## RL Is Expensive
 - RLHF 는 다음 두 단계 필요함:

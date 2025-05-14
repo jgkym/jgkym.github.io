@@ -1,8 +1,8 @@
 ---
-id: 202505121500
+created: 2025-05-12
+modified: 2025-05-14
 lang: ko
 tags: [ai/alignment, ai/reinforcement-learning]
-status: false
 ---
 ## TL;DR
 Optimal policy 에 대한 수식은 알려져 있지만, 정규화 상수 때문에 계산이 너무 복잡해서 실제로 쓰기 어려움.

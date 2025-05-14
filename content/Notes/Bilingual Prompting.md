@@ -1,5 +1,6 @@
 ---
-id: 202504262211
+created: 2025-04-26
+modified: 2025-04-26
 lang: ko
 tags: [ai/prompting]
 status: false
