@@ -1,8 +1,10 @@
 ---
 created: 2025-05-04
 modified: 2025-05-14
-lang:
-tags: [ai/finetuning, ai/reinforcement-learning]
+lang: ko
+tags:
+  - ai/finetuning
+  - ai/reinforcement-learning
 ---
 1. 파인튜닝 모델 $\pi^{\text{SFT}}$ + a prompt $x$ -> 두 개의 서로 다른 답변 $y_{1}, y_{2}$ 
 $$
