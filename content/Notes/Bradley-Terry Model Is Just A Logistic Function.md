@@ -7,6 +7,6 @@ $$
 p^{*}(y_{1}>y_{2}|x) = \frac{\exp(r^{*}(x,y_{1}))}{\exp(r^{*}(x,y_{1}))+\exp(r^{*}(x,y_{2}))}=\sigma(r^{*}(x,y_{1})-r^{*}(x,y_{2}))
 $$ 
 
-[@rafailov2023{3-4}]
+[@RafailovEtAl2024Direct{3-4}]
 
 ## Reference

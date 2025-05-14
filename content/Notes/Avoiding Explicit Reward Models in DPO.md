@@ -31,6 +31,6 @@ $$
 ## Bonus
 BT 를 포함하여, 보다 일반적으로 Plackett-Luce 모델이라면 이와 같은 방법을 적용할 수 있음.
 
-[@rafailov2023{4–5}]
+[@RafailovEtAl2024Direct{4–5}]
 
 ## Reference

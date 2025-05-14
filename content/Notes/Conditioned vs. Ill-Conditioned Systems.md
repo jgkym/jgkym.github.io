@@ -14,6 +14,6 @@ tags: [math/linear-algebra]
 
 외부 충격 (작은 변화) 에 얼마나 잘 버티냐 못 버티냐로 시스템의 ' 컨디션 ' 을 나눔.  
 
-[@meyer2000{33}]
+[@Meyer2000Matrix{33}]
 
 ## Reference

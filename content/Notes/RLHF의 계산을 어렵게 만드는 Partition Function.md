@@ -18,6 +18,6 @@ $$
 - 심지어 MLE(Maximum Likelihood Estimation) 같은 상대적으로 효율적인 방법을 써도 $Z(x)$ 계산은 여전히 비쌈
 - 따라서 이론상으로는 optimal policy 가 존재하지만, 계산 부담 때문에 실제로 적용하긴 어려움
 
-[@rafailov2023{4}]
+[@RafailovEtAl2024Direct{4}]
 
 ## Reference

@@ -15,6 +15,6 @@ $$
 - Exponential transformation: Reward 가 항상 positive score 임을 보장
 - Softmax: 값을 $[0, 1]$ 사이의 확률 형태로 나타낼 수 있음
 
-[@rafailov2023{3}]
+[@RafailovEtAl2024Direct{3}]
 
 ## Reference

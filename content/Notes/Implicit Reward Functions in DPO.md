@@ -18,6 +18,6 @@ DPO 는 reward model 없이도 optimal policy 를 학습할 수 있게 해주는
 - 이 방식 덕분에 실제 reward model 이 없어도 preference 데이터만으로 정책을 최적화할 수 있음.
 - 보상 모델을 따로 훈련하거나 평가하지 않아도 되기 때문에 훨씬 간단하고 효율적임.
 
-[@rafailov2023{4}]
+[@RafailovEtAl2024Direct{4}]
 
 ## Reference

@@ -14,6 +14,6 @@ status: false
 	- 계산 비용 매우 많이 듬
 	- 학습 과정 불안정함 (unstable)
 
- [@rafailov2023{4}]
+ [@RafailovEtAl2024Direct{4}]
 
 ## Reference

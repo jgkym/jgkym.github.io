@@ -25,6 +25,6 @@ $$
 \mathcal{L}_{R}(r_{\phi},D) = -\mathbb{E}_{(x,y_{w},y_{l})\sim D}[\log\sigma(r_{\phi}(x,y_{w})-r_{\phi}(x,y_{l}))]
 $$
 
-[@rafailov2023{3}]
+[@RafailovEtAl2024Direct{3}]
 
 ## Reference
