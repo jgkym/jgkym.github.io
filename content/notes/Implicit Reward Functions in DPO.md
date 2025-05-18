@@ -8,7 +8,7 @@ status: false
 ## TL;DR
 DPO 는 reward model 없이도 optimal policy 를 학습할 수 있게 해주는 트릭을 씀. 핵심은 reward function 을 간접적으로 표현하는 것.
 
-## 보상 모델 없이도 학습 가능하게 만드는 원리
+## Reward Model 없이도 학습 가능하게 만드는 원리
 - DPO 는 reward model 을 직접 쓰지 않고도 똑같은 학습이 가능하게끔 수식을 바꿈.
 - **Change of variables** 기법을 써서 reward function 을 다음 세 가지로만 표현함:
   - **optimal policy** (우리가 선호하는 답변을 생성할 수 있는 정책)

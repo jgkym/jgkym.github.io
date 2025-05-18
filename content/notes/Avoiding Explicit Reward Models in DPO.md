@@ -5,7 +5,6 @@ lang: ko
 tags: [ai/alignment, ai/reinforcement-learning]
 status: false
 ---
-## 먼저 소개할 두 가지 수식
 1. Bradley-Terry Preference Model: 
 $$
 p^{*}(y_{1} > y_{2}|x) = \sigma(r^{*}(x,y_{1})-r^{*}(x,y_{2})), \tag{a}
