@@ -7,7 +7,7 @@ status: false
 ---
 > ***Lemma 2.** Two reward functions from the same equivalence class induce the same optimal policy under the constrained RL problem.* — @RafailovEtAl2024Direct, p. 5
 
-Definition 에 따르면, same equivalence class 에 있는 두 reward function $r, r'$ 은 baseline 이 $f(x)$ 만큼 차이나는 관계에 있다.
+[[Understanding The Equivalence Between Two Reward Models in DPO|Definition]]에 따르면, same equivalence class 에 있는 두 reward function $r, r'$ 은 baseline 이 $f(x)$ 만큼 차이나는 관계에 있다.
 
 Eq. 4 [@RafailovEtAl2024Direct{4}] 를 다시 살펴보면, Plackett-Luce (특히 Bradley-Terry) Preference framework 하에서 도출되는 optimal policy 는 다음과 같다:
 $$
