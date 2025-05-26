@@ -2,10 +2,10 @@
 created: 2025-04-25
 modified: 2025-05-14
 lang: ko
-tags: [cs/devops]
+tags: [devops]
 status: false
 ---
-## ✈️ K8s = 공항 관제탑
+**✈️ K8s = 공항 관제탑**
 - **Container = 비행기**
 - **K8s = 공항 관제탑**
   - 수많은 비행기 (컨테이너) 가 이착륙 (배포와 종료) 할 수 있도록 통제하고,

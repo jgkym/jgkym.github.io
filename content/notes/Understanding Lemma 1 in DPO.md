@@ -2,7 +2,7 @@
 created: 2025-05-14 12:13:10
 modified: 2025-05-18 13:28:51
 lang: ko
-tags: [ai/alignment, ai/reinforcement-learning]
+tags: [alignment, reinforcement-learning]
 status: false
 ---
 >***Lemma 1.** Under the Plackett-Luce, and in particular the Bradley-Terry, preference framework, two reward functions from the same class induce the same preference distribution.* — @RafailovEtAl2024Direct, p. 5

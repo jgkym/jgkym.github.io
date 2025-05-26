@@ -2,12 +2,12 @@
 created: 2025-05-12
 modified: 2025-05-14
 lang: ko
-tags: [ai/alignment, ai/reinforcement-learning]
+tags: [alignment, reinforcement-learning]
 ---
-## TL;DR
+**TL;DR**
 Optimal policy 에 대한 수식은 알려져 있지만, 정규화 상수 때문에 계산이 너무 복잡해서 실제로 쓰기 어려움.
 
-## The optimal solution for the RLHF objective takes the following form:
+**The optimal solution for the RLHF objective takes the following form:**
 
 $$
 \pi_{r}(y|x) = \frac{1}{Z(x)}\pi_{\text{ref}}(y|x)\exp\left( \frac{1}{\beta}r(x,y) \right),

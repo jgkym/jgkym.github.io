@@ -2,7 +2,7 @@
 created: 2025-05-14 12:54:03
 modified: 2025-05-18 15:15:14
 lang: ko
-tags: [ai/alignment, ai/reinforcement-learning]
+tags: [alignment, reinforcement-learning]
 status: false
 ---
 > ***Lemma 2.** Two reward functions from the same equivalence class induce the same optimal policy under the constrained RL problem.* — @RafailovEtAl2024Direct, p. 5

@@ -2,7 +2,7 @@
 created: 2025-05-14 11:58:33
 modified: 2025-05-18 13:28:47
 lang: ko
-tags: [ai/alignment, ai/reinforcement-learning]
+tags: [alignment, reinforcement-learning]
 status: false
 ---
 > ***Definition 1.** We say that two reward functions $r(x,y)$ and $r'(x,y)$ are equivalent iff $r(x,y)−r'(x,y) = f(x)$ for some function $f$.* — @RafailovEtAl2024Direct, p. 5
@@ -20,7 +20,7 @@ r_{1}(x,y_{5})-r_{2}(x,y_{5})&=f(x) \\
 $$
 즉, 같은 프롬프트 $x$ 가 주어지면 어떤 답변이 생성되든 두 reward function 값의 차이는 늘 일정한 값 $f(x)$ 로 유지됨.
 
-## See Also
+## See also
 [[Understanding Lemma 1 in DPO]]  
 [[Understanding Lemma 2 in DPO]]
 

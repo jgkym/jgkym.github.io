@@ -2,10 +2,10 @@
 created: 2025-05-04
 modified: 2025-05-14
 lang: ko
-tags: [ai/finetuning, ai/reinforcement-learning]
+tags: [finetuning, reinforcement-learning]
 status: true
 ---
-## Optimization Objective
+**Optimization Objective**
 $$
 \mathbb{E}_{{x \sim D}, {y \sim \pi_{\theta}(y|x)}}[r_{\phi}(x,y)] - \beta \mathbb{D}_{\text{KL}}[\pi_{\theta}(y|x)\|\pi_{\text{ref}}(y|x)]
 $$

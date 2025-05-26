@@ -7,6 +7,80 @@
   howpublished = {https://huggingface.co/blog/vlms-2025}
 }
 
+@article{BeraEtAl2022SRGNN,
+  title = {{{SR-GNN}}: {{Spatial Relation-aware Graph Neural Network}} for {{Fine-Grained Image Categorization}}},
+  shorttitle = {{{SR-GNN}}},
+  author = {Bera, Asish and Wharton, Zachary and Liu, Yonghuai and Bessis, Nik and Behera, Ardhendu},
+  year = {2022},
+  journal = {IEEE Transactions on Image Processing},
+  volume = {31},
+  eprint = {2209.02109},
+  primaryclass = {cs},
+  pages = {6017--6031},
+  issn = {1057-7149, 1941-0042},
+  doi = {10.1109/TIP.2022.3205215},
+  urldate = {2025-05-19},
+  abstract = {Over the past few years, a significant progress has been made in deep convolutional neural networks (CNNs)-based image recognition. This is mainly due to the strong ability of such networks in mining discriminative object pose and parts information from texture and shape. This is often inappropriate for fine-grained visual classification (FGVC) since it exhibits high intra-class and low inter-class variances due to occlusions, deformation, illuminations, etc. Thus, an expressive feature representation describing global structural information is a key to characterize an object/ scene. To this end, we propose a method that effectively captures subtle changes by aggregating context-aware features from most relevant image-regions and their importance in discriminating fine-grained categories avoiding the bounding-box and/or distinguishable part annotations. Our approach is inspired by the recent advancement in self-attention and graph neural networks (GNNs) approaches to include a simple yet effective relation-aware feature transformation and its refinement using a context-aware attention mechanism to boost the discriminability of the transformed feature in an end-to-end learning process. Our model is evaluated on eight benchmark datasets consisting of fine-grained objects and human-object interactions. It outperforms the state-of-the-art approaches by a significant margin in recognition accuracy.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition},
+  file = {/Users/jingi/Zotero/storage/9EUFJ87Q/Bera et al. - 2022 - SR-GNN Spatial Relation-aware Graph Neural Networ.pdf;/Users/jingi/Zotero/storage/NXTCTPJZ/2209.html}
+}
+
+@misc{ForetEtAl2021SharpnessAware,
+  title = {Sharpness-{{Aware Minimization}} for {{Efficiently Improving Generalization}}},
+  author = {Foret, Pierre and Kleiner, Ariel and Mobahi, Hossein and Neyshabur, Behnam},
+  year = {2021},
+  month = apr,
+  number = {arXiv:2010.01412},
+  eprint = {2010.01412},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2010.01412},
+  urldate = {2025-05-20},
+  abstract = {In today's heavily overparameterized models, the value of the training loss provides few guarantees on model generalization ability. Indeed, optimizing only the training loss value, as is commonly done, can easily lead to suboptimal model quality. Motivated by prior work connecting the geometry of the loss landscape and generalization, we introduce a novel, effective procedure for instead simultaneously minimizing loss value and loss sharpness. In particular, our procedure, Sharpness-Aware Minimization (SAM), seeks parameters that lie in neighborhoods having uniformly low loss; this formulation results in a min-max optimization problem on which gradient descent can be performed efficiently. We present empirical results showing that SAM improves model generalization across a variety of benchmark datasets (e.g., CIFAR-10, CIFAR-100, ImageNet, finetuning tasks) and models, yielding novel state-of-the-art performance for several. Additionally, we find that SAM natively provides robustness to label noise on par with that provided by state-of-the-art procedures that specifically target learning with noisy labels. We open source our code at {\textbackslash}url\{https://github.com/google-research/sam\}.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning,Statistics - Machine Learning},
+  file = {/Users/jingi/Zotero/storage/N5YZAMDY/Foret et al. - 2021 - Sharpness-Aware Minimization for Efficiently Impro.pdf;/Users/jingi/Zotero/storage/FB7FNCCM/2010.html}
+}
+
+@article{Liu2024Progressive,
+  title = {Progressive {{Multi-task Anti-Noise Learning}} and {{Distilling Frameworks}} for {{Fine-grained Vehicle Recognition}}},
+  author = {Liu, Dichao},
+  year = {2024},
+  month = sep,
+  journal = {IEEE Transactions on Intelligent Transportation Systems},
+  volume = {25},
+  number = {9},
+  eprint = {2401.14336},
+  primaryclass = {cs},
+  pages = {10667--10678},
+  issn = {1524-9050, 1558-0016},
+  doi = {10.1109/TITS.2024.3420151},
+  urldate = {2025-05-19},
+  abstract = {Fine-grained vehicle recognition (FGVR) is an essential fundamental technology for intelligent transportation systems, but very difficult because of its inherent intra-class variation. Most previous FGVR studies only focus on the intra-class variation caused by different shooting angles, positions, etc., while the intra-class variation caused by image noise has received little attention. This paper proposes a progressive multi-task anti-noise learning (PMAL) framework and a progressive multi-task distilling (PMD) framework to solve the intra-class variation problem in FGVR due to image noise. The PMAL framework achieves high recognition accuracy by treating image denoising as an additional task in image recognition and progressively forcing a model to learn noise invariance. The PMD framework transfers the knowledge of the PMAL-trained model into the original backbone network, which produces a model with about the same recognition accuracy as the PMAL-trained model, but without any additional overheads over the original backbone network. Combining the two frameworks, we obtain models that significantly exceed previous state-of-the-art methods in recognition accuracy on two widely-used, standard FGVR datasets, namely Stanford Cars, and CompCars, as well as three additional surveillance image-based vehicle-type classification datasets, namely Beijing Institute of Technology (BIT)-Vehicle, Vehicle Type Image Data 2 (VTID2), and Vehicle Images Dataset for Make Model Recognition (VIDMMR), without any additional overheads over the original backbone networks. The source code is available at https://github.com/Dichao-Liu/Anti-noise\_FGVR},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition},
+  file = {/Users/jingi/Zotero/storage/CES75CY5/Liu - 2024 - Progressive Multi-task Anti-Noise Learning and Distilling Frameworks for Fine-grained Vehicle Recognition.pdf}
+}
+
+@misc{LiuEtAl2024Vision,
+  title = {Vision {{Mamba}}: {{A Comprehensive Survey}} and {{Taxonomy}}},
+  shorttitle = {Vision {{Mamba}}},
+  author = {Liu, Xiao and Zhang, Chenxu and Zhang, Lei},
+  year = {2024},
+  month = may,
+  number = {arXiv:2405.04404},
+  eprint = {2405.04404},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2405.04404},
+  urldate = {2025-05-24},
+  abstract = {State Space Model (SSM) is a mathematical model used to describe and analyze the behavior of dynamic systems. This model has witnessed numerous applications in several fields, including control theory, signal processing, economics and machine learning. In the field of deep learning, state space models are used to process sequence data, such as time series analysis, natural language processing (NLP) and video understanding. By mapping sequence data to state space, long-term dependencies in the data can be better captured. In particular, modern SSMs have shown strong representational capabilities in NLP, especially in long sequence modeling, while maintaining linear time complexity. Notably, based on the latest state-space models, Mamba merges time-varying parameters into SSMs and formulates a hardware-aware algorithm for efficient training and inference. Given its impressive efficiency and strong long-range dependency modeling capability, Mamba is expected to become a new AI architecture that may outperform Transformer. Recently, a number of works have attempted to study the potential of Mamba in various fields, such as general vision, multi-modal, medical image analysis and remote sensing image analysis, by extending Mamba from natural language domain to visual domain. To fully understand Mamba in the visual domain, we conduct a comprehensive survey and present a taxonomy study. This survey focuses on Mamba's application to a variety of visual tasks and data types, and discusses its predecessors, recent advances and far-reaching impact on a wide range of domains. Since Mamba is now on an upward trend, please actively notice us if you have new findings, and new progress on Mamba will be included in this survey in a timely manner and updated on the Mamba project at https://github.com/lx6c78/Vision-Mamba-A-Comprehensive-Survey-and-Taxonomy.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning},
+  file = {/Users/jingi/Zotero/storage/IZUKMYWI/Liu et al. - 2024 - Vision Mamba A Comprehensive Survey and Taxonomy.pdf;/Users/jingi/Zotero/storage/FG2YLWKR/2405.html}
+}
+
 @book{Meyer2000Matrix,
   title = {Matrix {{Analysis}} and {{Applied Linear Algebra}}},
   author = {Meyer, Carl D},
@@ -32,6 +106,25 @@
   archiveprefix = {arXiv},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Machine Learning},
   file = {/Users/jingi/Zotero/storage/7QT62EKG/Rafailov et al. - 2024 - Direct Preference Optimization Your Language Mode.pdf;/Users/jingi/Zotero/storage/TI8NAFAI/2305.html}
+}
+
+@article{SikdarEtAl2025Interweaving,
+  title = {Interweaving {{Insights}}: {{High-Order Feature Interaction}} for {{Fine-Grained Visual Recognition}}},
+  shorttitle = {Interweaving {{Insights}}},
+  author = {Sikdar, Arindam and Liu, Yonghuai and Kedarisetty, Siddhardha and Zhao, Yitian and Ahmed, Amr and Behera, Ardhendu},
+  year = {2025},
+  month = apr,
+  journal = {International Journal of Computer Vision},
+  volume = {133},
+  number = {4},
+  pages = {1755--1779},
+  issn = {1573-1405},
+  doi = {10.1007/s11263-024-02260-y},
+  urldate = {2025-05-24},
+  abstract = {This paper presents a novel approach for Fine-Grained Visual Classification (FGVC) by exploring Graph Neural Networks (GNNs) to facilitate high-order feature interactions, with a specific focus on constructing both inter- and intra-region graphs. Unlike previous FGVC techniques that often isolate global and local features, our method combines both features seamlessly during learning via graphs. Inter-region graphs capture long-range dependencies to recognize global patterns, while intra-region graphs delve into finer details within specific regions of an object by exploring high-dimensional convolutional features. A key innovation is the use of shared GNNs with an attention mechanism coupled with the Approximate Personalized Propagation of Neural Predictions (APPNP) message-passing algorithm, enhancing information propagation efficiency for better discriminability and simplifying the model architecture for computational efficiency. Additionally, the introduction of residual connections improves performance and training stability. Comprehensive experiments showcase state-of-the-art results on benchmark FGVC datasets, affirming the efficacy of our approach. This work underscores the potential of GNN in modeling high-level feature interactions, distinguishing it from previous FGVC methods that typically focus on singular aspects of feature representation. Our source code is available at https://github.com/Arindam-1991/I2-HOFI.},
+  langid = {english},
+  keywords = {Computational Neuroscience,Computer Vision,Convolutional neural networks,Fine-grained visual recognition,Genetic Interaction,Graph attention networks,High-order feature interaction,Inter-region and intra-region graphs,Neural decoding,Neural encoding,Object Recognition,Residual graph neural networks},
+  file = {/Users/jingi/Zotero/storage/H3MBYFYI/Sikdar et al. - 2025 - Interweaving Insights High-Order Feature Interact.pdf}
 }
 
 @misc{Vision,
@@ -70,4 +163,58 @@
   howpublished = {https://lilianweng.github.io/posts/2023-06-23-agent/},
   langid = {english},
   file = {/Users/jingi/Zotero/storage/3BR3E6J4/2023-06-23-agent.html}
+}
+
+@misc{YuEtAl2025Benchmarking,
+  title = {Benchmarking {{Large Vision-Language Models}} on {{Fine-Grained Image Tasks}}: {{A Comprehensive Evaluation}}},
+  shorttitle = {Benchmarking {{Large Vision-Language Models}} on {{Fine-Grained Image Tasks}}},
+  author = {Yu, Hong-Tao and Wei, Xiu-Shen and Peng, Yuxin and Belongie, Serge},
+  year = {2025},
+  month = may,
+  number = {arXiv:2504.14988},
+  eprint = {2504.14988},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2504.14988},
+  urldate = {2025-05-19},
+  abstract = {Recent advancements in Large Vision-Language Models (LVLMs) have demonstrated remarkable multimodal perception capabilities, garnering significant attention. While numerous evaluation studies have emerged, assessing LVLMs both holistically and on specialized tasks, fine-grained image tasks-fundamental to computer vision-remain largely unexplored. To fill this gap, we introduce a comprehensive fine-grained evaluation benchmark, i.e., FG-BMK, comprising 1.01 million questions and 0.33 million images. Our evaluation systematically examines LVLMs from both human-oriented and machine-oriented perspectives, focusing on their semantic recognition and fine-grained feature representation capabilities. Through extensive experiments on twelve representative LVLMs/VLMs, we uncover key findings regarding the influence of training paradigms, modality alignment, perturbation susceptibility, and fine-grained category reasoning on task performance. This work provides critical insights into the limitations of current LVLMs and offers guidance for future data construction and model design in the development of more advanced LVLMs. Our code is open-source and available at https://github.com/SEU-VIPGroup/FG-BMK.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/Users/jingi/Zotero/storage/YW7MWUUR/Yu et al. - 2025 - Benchmarking Large Vision-Language Models on Fine-.pdf;/Users/jingi/Zotero/storage/5FQ8Y37I/2504.html}
+}
+
+@misc{ZhangEtAl2024VisionLanguage,
+  title = {Vision-{{Language Models}} for {{Vision Tasks}}: {{A Survey}}},
+  shorttitle = {Vision-{{Language Models}} for {{Vision Tasks}}},
+  author = {Zhang, Jingyi and Huang, Jiaxing and Jin, Sheng and Lu, Shijian},
+  year = {2024},
+  month = feb,
+  number = {arXiv:2304.00685},
+  eprint = {2304.00685},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2304.00685},
+  urldate = {2025-05-24},
+  abstract = {Most visual recognition studies rely heavily on crowd-labelled data in deep neural networks (DNNs) training, and they usually train a DNN for each single visual recognition task, leading to a laborious and time-consuming visual recognition paradigm. To address the two challenges, Vision-Language Models (VLMs) have been intensively investigated recently, which learns rich vision-language correlation from web-scale image-text pairs that are almost infinitely available on the Internet and enables zero-shot predictions on various visual recognition tasks with a single VLM. This paper provides a systematic review of visual language models for various visual recognition tasks, including: (1) the background that introduces the development of visual recognition paradigms; (2) the foundations of VLM that summarize the widely-adopted network architectures, pre-training objectives, and downstream tasks; (3) the widely-adopted datasets in VLM pre-training and evaluations; (4) the review and categorization of existing VLM pre-training methods, VLM transfer learning methods, and VLM knowledge distillation methods; (5) the benchmarking, analysis and discussion of the reviewed methods; (6) several research challenges and potential research directions that could be pursued in the future VLM studies for visual recognition. A project associated with this survey has been created at https://github.com/jingyi0000/VLM\_survey.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/Users/jingi/Zotero/storage/KCUK39P7/Zhang et al. - 2024 - Vision-Language Models for Vision Tasks A Survey.pdf;/Users/jingi/Zotero/storage/KPPKLE8A/2304.html}
+}
+
+@misc{ZhengEtAl2019Looking,
+  title = {Looking for the {{Devil}} in the {{Details}}: {{Learning Trilinear Attention Sampling Network}} for {{Fine-grained Image Recognition}}},
+  shorttitle = {Looking for the {{Devil}} in the {{Details}}},
+  author = {Zheng, Heliang and Fu, Jianlong and Zha, Zheng-Jun and Luo, Jiebo},
+  year = {2019},
+  month = jun,
+  number = {arXiv:1903.06150},
+  eprint = {1903.06150},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.1903.06150},
+  urldate = {2025-05-19},
+  abstract = {Learning subtle yet discriminative features (e.g., beak and eyes for a bird) plays a significant role in fine-grained image recognition. Existing attention-based approaches localize and amplify significant parts to learn fine-grained details, which often suffer from a limited number of parts and heavy computational cost. In this paper, we propose to learn such fine-grained features from hundreds of part proposals by Trilinear Attention Sampling Network (TASN) in an efficient teacher-student manner. Specifically, TASN consists of 1) a trilinear attention module, which generates attention maps by modeling the inter-channel relationships, 2) an attention-based sampler which highlights attended parts with high resolution, and 3) a feature distiller, which distills part features into a global one by weight sharing and feature preserving strategies. Extensive experiments verify that TASN yields the best performance under the same settings with the most competitive approaches, in iNaturalist-2017, CUB-Bird, and Stanford-Cars datasets.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/Users/jingi/Zotero/storage/W3VRIFDI/Zheng et al. - 2019 - Looking for the Devil in the Details Learning Tri.pdf;/Users/jingi/Zotero/storage/F3NKRCGB/1903.html}
 }

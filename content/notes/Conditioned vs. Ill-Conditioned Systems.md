@@ -2,7 +2,7 @@
 created: 2025-05-07
 modified: 2025-05-14
 lang: ko
-tags: [math/linear-algebra]
+tags: [linear-algebra]
 ---
 선형 시스템에 가해지는 작은 변화 (입력값이나 파라미터) 에 대해 결과값이 얼마나 민감하게 반응하는가
 
