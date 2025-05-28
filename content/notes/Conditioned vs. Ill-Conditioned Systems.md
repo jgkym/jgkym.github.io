@@ -1,20 +1,22 @@
 ---
-created: 2025-05-07
-modified: 2025-05-14
-lang: ko
+created: 2025-05-25 23:49:15
+modified: 2025-05-28 01:51:34
 tags: [linear-algebra]
 ---
-선형 시스템에 가해지는 작은 변화 (입력값이나 파라미터) 에 대해 결과값이 얼마나 민감하게 반응하는가
+Conditioning refers to how **sensitive** a linear system's output is to small changes in its inputs or parameters. It essentially tells us how well the system can "handle" small perturbations.
 
-- **Ill-conditioned:**
-    - **특징:** 시스템에 아주 작은 변화만 줘도 최종 결과가 **크게** 달라짐.
-    - **느낌:** 불안정하고 민감함.
-- **Well-conditioned:**
-    - **특징:** 시스템에 작은 변화를 줘도 최종 결과가 **거의 변하지 않거나 작게만** 변함.
-    - **느낌:** 튼튼하고 안정적.
+**Ill-conditioned:**
+- **Characteristics:** Even tiny changes to the system can lead to **significantly large** differences in the final results.
+- **Analogy:** Think of it like a wobbly table. A slight bump can make everything on it fall over.
+- **Feeling:** Unstable and highly sensitive.
 
-외부 충격 (작은 변화) 에 얼마나 잘 버티냐 못 버티냐로 시스템의 ' 컨디션 ' 을 나눔.  
+**Well-conditioned:**
+- **Characteristics:** Small changes to the system result in **minimal or no change** in the final results.
+- **Analogy:** This is like a sturdy table. A slight bump won't disturb anything on it.
+- **Feeling:** Robust and stable.
+
+In essence, the "condition" of a system describes its ability to withstand external shocks or small changes.
 
 [@Meyer2000Matrix{33}]
 
-## Reference
+### Reference

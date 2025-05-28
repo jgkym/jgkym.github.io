@@ -1,7 +1,6 @@
 ---
-created: 2025-05-11
-modified: 2025-05-14
-lang: en
+created: 2025-05-25 23:48:38
+modified: 2025-05-28 01:51:34
 tags: [alignment, reinforcement-learning]
 ---
 $$
@@ -10,4 +9,4 @@ $$
 
 [@RafailovEtAl2024Direct{3-4}]
 
-## Reference
+### Reference

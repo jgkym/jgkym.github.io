@@ -1,32 +1,34 @@
 ---
-created: 2025-05-04
-modified: 2025-05-14
-lang: ko
-tags:
-  - finetuning
-  - reinforcement-learning
+created: 2025-05-25 23:48:28
+modified: 2025-05-28 10:02:28
+tags: [finetuning, reinforcement-learning]
 ---
-1. 파인튜닝 모델 $\pi^{\text{SFT}}$ + a prompt $x$ -> 두 개의 서로 다른 답변 $y_{1}, y_{2}$ 
+### 1. Generate Responses With a Fine-tuned Model
+A fine-tuned model, $\pi^{\text{SFT}}$, is given a prompt $x$ to generate two distinct responses $y_{1}$ and $y_{2}$. 
 $$
 (y_{1}, y_{2}) \sim \pi^{\text{SFT}}(y|x)
 $$
-2. Human labeler. 두 답변 중에 어떤 답변이 더 나은지 사람이 직접 평가. $(y_{1}, y_{2})\to(y_{w}, y_{l})$
-	여기에 나타난 패턴을 바탕으로 reward model 앞으로 선호도 점수를 메길 것임
-3. Reward model
-	- 선호도를 모델링하는 방법은 여러가지. 걔 중 BT가 가장 대중적.
-	- [[Interpreting The Bradley-Terry Model for Preferences|Bradley-Terry Model]]:
+### 2. Human Labeling (Preference Collection) 
+A human labeler evaluates the two responses $(y_{1},y_{2})$ and indicates which one is better, resulting in a preferred response $y_{w}$​ (winner) and a dispreferred response $y_{l}$​ (loser). This pattern of preferences will be used by the reward model to assign future preference scores.  
+  
+### 3. Reward Model
+There are various methods for modeling preferences, with the Bradley-Terry (BT) model being the most popular. 
+- **[[Interpreting The Bradley-Terry Model for Preferences|Bradley-Terry Model]]:** 
 $$
 p^{*}(y_{1}>y_{2}|x)=\frac{{\exp(r^{*}(x,y_{1}))}}{\exp(r^{*}(x,y_{1}))+\exp(r^{*}(x,y_{2}))}
-$$
 
-4. Maximum Likelihood Estimation
-	1. reward 모델 $r_{\phi}$ 를 학습시키기 위해 MLE 사용
-	2. A binary classification
-	3. Minimizing the negative log-likelihood function:
+$$ 
+This equation calculates the probability that $y_{1}$​is preferred over $y_{2}$​given prompt $x$, based on their respective reward scores $r^{*}$.
+
+### 4. Maximum Likelihood Estimation (MLE)
+1. MLE is used to train the reward model $r_{\phi}$​
+2. This can be framed as a binary classification problem (classifying which response is preferred).	
+3. The training involves minimizing the negative log-likelihood function:
 $$
-\mathcal{L}_{R}(r_{\phi},D) = -\mathbb{E}_{(x,y_{w},y_{l})\sim D}[\log\sigma(r_{\phi}(x,y_{w})-r_{\phi}(x,y_{l}))]
+\mathcal{L}_{R}(r_{\phi},\mathcal{D}) = -\mathbb{E}_{(x,y_{w},y_{l})\sim \mathcal{D}}[\log \sigma(r_{\phi}(x,y_{w})-r_{\phi}(x,y_{l}))]
 $$
+This loss function aims to maximize the probability of assigning a higher reward to the preferred response ($y_{w}$) compared to the dispreferred response ($y_{l}$) based on the collected dataset $D$.
 
 [@RafailovEtAl2024Direct{3}]
 
-## Reference
+### Reference
