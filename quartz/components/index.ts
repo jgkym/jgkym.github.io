@@ -23,6 +23,7 @@ import Breadcrumbs from "./Breadcrumbs"
 import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
+import TopTagsList from "./TopTagsList"
 
 export {
   ArticleTitle,
@@ -38,6 +39,7 @@ export {
   TableOfContents,
   Explorer,
   TagList,
+  TopTagsList,
   Graph,
   Backlinks,
   Search,

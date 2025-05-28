@@ -1,0 +1,50 @@
+.top-tags-list {
+  margin: 1rem 0;
+  
+  h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .no-tags {
+    color: var(--gray);
+    font-style: italic;
+  }
+  
+  .tag-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    
+    .tag-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      
+      .tag-link {
+        padding: 0.2rem 0.5rem;
+        background-color: var(--lightgray);
+        border-radius: 0.25rem;
+        text-decoration: none;
+        color: var(--darkgray);
+        transition: all 0.2s ease;
+        
+        &:hover {
+          background-color: var(--gray);
+          color: var(--dark);
+        }
+      }
+      
+      .tag-count {
+        font-size: 0.85em;
+        color: var(--gray);
+      }
+      
+      &.see-all .tag-link {
+        font-style: italic;
+      }
+    }
+  }
+}

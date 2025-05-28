@@ -20,14 +20,14 @@ export const homePageLayout: PageLayout = {
     Component.Spacer(),
   ],
   afterBody: [
-    Component.Spacer(),
     Component.Flex({
       components: [
         {
-          Component: Component.TagList(),
-          align: "center",
-          justify: "center",
-          grow: true,
+          Component: Component.TopTagsList({
+            limit: 3,
+            align: "right",
+            title: undefined,
+          }),
         },
       ],
     }),
@@ -70,17 +70,7 @@ export const defaultContentPageLayout: PageLayout = {
       }),
     ),
   ],
-  afterBody: [
-    Component.MobileOnly(
-      Component.RecentNotes({
-        title: "Recent Notes",
-        limit: 5,
-        showTags: false,
-        filter: (f: QuartzPluginData) => !f.slug?.endsWith("/index") && f.slug !== "index",
-        linkToMore: "notes",
-      }),
-    )
-  ],
+  afterBody: [],
   right: [
     Component.ConditionalRender({
       component: Component.Graph(),
@@ -88,6 +78,14 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
+    Component.MobileOnly(
+      Component.RecentNotes({
+        title: "Recent Notes",
+        limit: 3,
+        showTags: false,
+        filter: (f: QuartzPluginData) => !f.slug?.endsWith("/index") && f.slug !== "index",
+      }),
+    )
   ],
 }
 
@@ -128,9 +126,4 @@ export const defaultListPageLayout: PageLayout = {
     )
   ],
   right: [],
-}
-
-export const defaultHomePageLayout: PageLayout = {
-  beforeBody: [Component.Search()],
-  afterBody: [Component.TagList()],
 }
