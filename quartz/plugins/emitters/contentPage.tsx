@@ -6,9 +6,9 @@ import BodyConstructor from "../../components/Body"
 import { pageResources, renderPage } from "../../components/renderPage"
 import { FullPageLayout } from "../../cfg"
 import { pathToRoot } from "../../util/path"
-import { defaultContentPageLayout, sharedPageComponents } from "../../../quartz.layout"
+import { defaultContentPageLayout, sharedPageComponents, homePageLayout } from "../../../quartz.layout"
 import { Content } from "../../components"
-import chalk from "chalk"
+import { styleText } from "util"
 import { write } from "./helpers"
 import { BuildCtx } from "../../util/ctx"
 import { Node } from "unist"
@@ -53,7 +53,21 @@ export const ContentPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOp
     ...userOpts,
   }
 
+  const homeOpts: FullPageLayout = {
+    ...sharedPageComponents,
+    ...homePageLayout,
+    pageBody: Content(),
+    ...userOpts,
+  }
+
   const { head: Head, header, beforeBody, pageBody, afterBody, left, right, footer: Footer } = opts
+  const {
+    beforeBody: homeBeforeBody,
+    afterBody: homeAfterBody,
+    left: homeLeft,
+    right: homeRight,
+  } = homeOpts
+
   const Header = HeaderConstructor()
   const Body = BodyConstructor()
 
@@ -66,10 +80,14 @@ export const ContentPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOp
         Body,
         ...header,
         ...beforeBody,
+        ...homeBeforeBody,
         pageBody,
         ...afterBody,
+        ...homeAfterBody,
         ...left,
+        ...homeLeft,
         ...right,
+        ...homeRight,
         Footer,
       ]
     },
@@ -81,16 +99,18 @@ export const ContentPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOp
         const slug = file.data.slug!
         if (slug === "index") {
           containsIndex = true
+          // Use homeOpts for the homepage
+          yield processContent(ctx, tree, file.data, allFiles, homeOpts, resources)
+        } 
+        else if (!slug.endsWith("/index") && !slug.startsWith("tags/")) {
+          yield processContent(ctx, tree, file.data, allFiles, opts, resources)
         }
-
-        // only process home page, non-tag pages, and non-index pages
-        if (slug.endsWith("/index") || slug.startsWith("tags/")) continue
-        yield processContent(ctx, tree, file.data, allFiles, opts, resources)
       }
 
       if (!containsIndex) {
         console.log(
-          chalk.yellow(
+          styleText(
+            "yellow",
             `\nWarning: you seem to be missing an \`index.md\` home page file at the root of your \`${ctx.argv.directory}\` folder (\`${path.join(ctx.argv.directory, "index.md")} does not exist\`). This may cause errors when deploying.`,
           ),
         )
@@ -113,7 +133,9 @@ export const ContentPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOp
         if (!changedSlugs.has(slug)) continue
         if (slug.endsWith("/index") || slug.startsWith("tags/")) continue
 
-        yield processContent(ctx, tree, file.data, allFiles, opts, resources)
+        // Use appropriate layout based on slug
+        const layoutToUse = slug === "index" ? homeOpts : opts
+        yield processContent(ctx, tree, file.data, allFiles, layoutToUse, resources)
       }
     },
   }

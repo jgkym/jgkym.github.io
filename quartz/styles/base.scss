@@ -543,12 +543,33 @@ p > img + em {
   transform: translateY(-1rem);
 }
 
+// hr {
+//   width: 100%;
+//   margin: 2rem auto;
+//   height: 1px;
+//   border: none;
+//   background-color: var(--lightgray);  /*Change this to your desired color */
+// }
+
 hr {
-  width: 100%;
-  margin: 2rem auto;
-  height: 1px;
-  border: none;
-  background-color: var(--lightgray);  /*Change this to your desired color */
+  border: none; /* Remove default border */
+  height: 2em;  /* Give it some height to display content */
+  position: relative; /* For pseudo-element positioning */
+  overflow: hidden; /* Hide anything outside the hr */
+}
+
+hr::before {
+  content: '***'; /* Your desired characters */
+  display: block;
+  text-align: center;
+  font-size: 2em; /* Adjust size as needed */
+  line-height: 1; /* Keep it centered vertically */
+  color: var(--lightgray); /* Color of your asterisks */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
 }
 
 audio,

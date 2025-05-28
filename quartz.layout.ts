@@ -14,6 +14,28 @@ export const sharedPageComponents: SharedLayout = {
   }),
 }
 
+// hompage layout
+export const homePageLayout: PageLayout = {
+  beforeBody: [
+    Component.Spacer(),
+  ],
+  afterBody: [
+    Component.Spacer(),
+    Component.Flex({
+      components: [
+        {
+          Component: Component.TagList(),
+          align: "center",
+          justify: "center",
+          grow: true,
+        },
+      ],
+    }),
+  ],
+  left: [],
+  right: [],
+}
+
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
@@ -21,7 +43,7 @@ export const defaultContentPageLayout: PageLayout = {
       component: Component.Breadcrumbs(),
       condition: (page) => page.fileData.slug !== "index",
     }),
-    Component.ArticleTitle(),
+    Component.ArticleTitle(),    
     Component.ContentMeta(),
     Component.TagList(),
   ],
@@ -38,16 +60,32 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.RecentNotes({
-      title: "Recent Notes",
-      limit: 5,
-      showTags: false,
-      filter: (f: QuartzPluginData) => !f.slug?.endsWith("/index") && f.slug !== "index",
-      linkToMore: "notes",
-    }),
+    Component.DesktopOnly(
+      Component.RecentNotes({
+        title: "Recent Notes",
+        limit: 5,
+        showTags: false,
+        filter: (f: QuartzPluginData) => !f.slug?.endsWith("/index") && f.slug !== "index",
+        linkToMore: "notes",
+      }),
+    ),
+  ],
+  afterBody: [
+    Component.MobileOnly(
+      Component.RecentNotes({
+        title: "Recent Notes",
+        limit: 5,
+        showTags: false,
+        filter: (f: QuartzPluginData) => !f.slug?.endsWith("/index") && f.slug !== "index",
+        linkToMore: "notes",
+      }),
+    )
   ],
   right: [
-    Component.Graph(),
+    Component.ConditionalRender({
+      component: Component.Graph(),
+      condition: (page) => page.fileData.slug !== "index",
+    }),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],
@@ -68,13 +106,31 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.RecentNotes({
-      title: "Recent Notes",
-      limit: 5,
-      showTags: false,
-      filter: (f: QuartzPluginData) => !f.slug?.endsWith("/index") && f.slug !== "index",
-      linkToMore: "notes",
-    }),
+    Component.DesktopOnly(
+      Component.RecentNotes({
+        title: "Recent Notes",
+        limit: 5,
+        showTags: false,
+        filter: (f: QuartzPluginData) => !f.slug?.endsWith("/index") && f.slug !== "index",
+        linkToMore: "notes",
+      }),
+    ),
+  ],
+  afterBody: [
+    Component.MobileOnly(
+      Component.RecentNotes({
+        title: "Recent Notes",
+        limit: 5,
+        showTags: false,
+        filter: (f: QuartzPluginData) => !f.slug?.endsWith("/index") && f.slug !== "index",
+        linkToMore: "notes",
+      }),
+    )
   ],
   right: [],
+}
+
+export const defaultHomePageLayout: PageLayout = {
+  beforeBody: [Component.Search()],
+  afterBody: [Component.TagList()],
 }

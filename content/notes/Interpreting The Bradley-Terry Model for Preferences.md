@@ -3,7 +3,7 @@ created: 2025-05-25 23:49:04
 modified: 2025-05-28 01:51:34
 tags: [alignment, reinforcement-learning]
 ---
-### Equation for Bradley-Terry (BT) Model
+### Bradley-Terry (BT) Model
 $$
 p^{*}(y_{1}>y_{2}|x) = {\frac{\exp(r(x,y_{1}))}{\exp(r(x,y_{1}))+\exp(r(x,y_{2}))}}
 $$

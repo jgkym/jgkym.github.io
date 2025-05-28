@@ -1,6 +1,4 @@
 ---
-title: About
-layout: defaultHomePageLayout
+title: "JGKYM"
 ---
-
-Hi, I'm Jingi Kym! 🤗
+<p align="center"><img src="./home.jpg" width=80%></p>
