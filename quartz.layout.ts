@@ -20,17 +20,11 @@ export const homePageLayout: PageLayout = {
     Component.Spacer(),
   ],
   afterBody: [
-    Component.Flex({
-      components: [
-        {
-          Component: Component.TopTagsList({
-            limit: 3,
-            align: "right",
-            title: undefined,
+    Component.TopTagsList({
+            limit: 10,
+            align: "center",
+            displayCount: false,
           }),
-        },
-      ],
-    }),
   ],
   left: [],
   right: [],
@@ -78,6 +72,7 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
+    Component.MobileOnly(Component.Spacer()),
     Component.MobileOnly(
       Component.RecentNotes({
         title: "Recent Notes",

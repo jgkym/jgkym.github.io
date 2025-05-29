@@ -5,10 +5,10 @@ import style from "./styles/topTagsList.scss"
 interface TopTagsListOptions {
   /** The number of top tags to display. Others are grouped. Default: 10 */
   limit?: number
-  /** Alignment of the component container. Default: 'left' */
+  /** Alignment of the component container. Default: 'center' */
   align?: "left" | "center" | "right"
-  /** Title for the tag list. Default: 'Popular Tags' */
-  title?: string
+  /** Whether to display the count of each tag. Default: true */
+  displayCount?: boolean
   /** Text for the 'see all' or 'other tags' link. Default: '...' */
   seeAllText?: string
   /** Slug for the main tags index page. Default: 'tags' */
@@ -27,7 +27,7 @@ export default ((userOpts?: TopTagsListOptions) => {
   const opts: Required<TopTagsListOptions> = {
     limit: userOpts?.limit ?? 3,
     align: userOpts?.align ?? "center",
-    title: userOpts?.title ?? undefined,
+    displayCount: userOpts?.displayCount ?? false,
     seeAllText: userOpts?.seeAllText ?? "...",
     tagsPageSlug: (userOpts?.tagsPageSlug ?? "tags") as FullSlug,
     displayClass: userOpts?.displayClass ?? "",
@@ -61,7 +61,7 @@ export default ((userOpts?: TopTagsListOptions) => {
         count: data.count,
       }))
 
-    if (sortedTags.length === 0 && !opts.title) {
+    if (sortedTags.length === 0) {
       return null
     }
 
@@ -83,8 +83,7 @@ export default ((userOpts?: TopTagsListOptions) => {
       : `/${opts.tagsPageSlug}`) as FullSlug
 
     return (
-      <div class={`top-tags-list ${opts.displayClass}`} style={{ textAlign: opts.align }}>
-        {opts.title && <h3>{opts.title}</h3>}
+      <div class={`top-tags-list align-${opts.align} $(opts.displayClass}`}>
         {displayTags.length === 0 ? (
           <p class="no-tags">No tags found.</p>
         ) : (
@@ -97,7 +96,7 @@ export default ((userOpts?: TopTagsListOptions) => {
                 >
                   {tag.name}
                 </a>
-                <span class="tag-count">({tag.count})</span>
+                {opts.displayCount && (<span class="tag-count">({tag.count})</span>)}
               </li>
             ))}
             {hasRemainingTags && (
@@ -108,7 +107,7 @@ export default ((userOpts?: TopTagsListOptions) => {
                 >
                   {opts.seeAllText}
                 </a>
-                <span class="tag-count">({remainingCount})</span>
+                {opts.displayCount && (<span class="tag-count">({remainingCount})</span>)}
               </li>
             )}
           </ul>
