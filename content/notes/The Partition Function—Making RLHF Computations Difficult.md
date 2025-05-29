@@ -1,11 +1,13 @@
 ---
 created: 2025-05-25 23:46:53
 modified: 2025-05-28 01:51:34
-tags: [alignment, reinforcement-learning]
+tags:
+  - alignment
+  - reinforcement-learning
+  - dpo
 ---
-### TL;DR 
-While the formula for the optimal policy is known, the normalization constant (partition function) makes its computation prohibitively complex, making it impractical for real-world application.
-
+>[!tldr] 
+> While the formula for the optimal policy is known, the normalization constant (partition function) makes its computation prohibitively complex, making it impractical for real-world application.
 
 ### Partition Function
 The optimal solution for the RLHF objective takes the following form:
@@ -20,4 +22,5 @@ Here, $Z(x)$ represents the **partition function** (or normalization constant).
 
 [@RafailovEtAl2024Direct{4}]
 
+ 
 ### Reference

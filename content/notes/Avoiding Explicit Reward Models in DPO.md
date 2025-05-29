@@ -1,7 +1,10 @@
 ---
 created: 2025-05-12 14:13:00
 modified: 2025-05-28 01:51:34
-tags: [alignment, reinforcement-learning]
+tags:
+  - alignment
+  - reinforcement-learning
+  - dpo
 ---
 1. **Bradley-Terry Preference Model:** 
 $$

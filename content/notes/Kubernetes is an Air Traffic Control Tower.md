@@ -1,7 +1,9 @@
 ---
 created: 2025-05-25 23:24:40
 modified: 2025-05-28
-tags: [devops]
+tags:
+  - devops
+  - k8s
 ---
 **✈️ K8s = Air Traffic Control Tower**
 - **Container = Airplanes**

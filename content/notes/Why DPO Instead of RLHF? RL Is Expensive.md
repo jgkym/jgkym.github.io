@@ -1,7 +1,10 @@
 ---
 created: 2025-05-25 23:48:32
 modified: 2025-05-28 01:51:34
-tags: [finetuning, reinforcement-learning]
+tags:
+  - finetuning
+  - reinforcement-learning
+  - dpo
 ---
 Reinforcement Learning from Human Feedback (RLHF) requires two main stages, both of which come with significant costs:
 1. **Training a Reward Model**: First, you need to train a separate reward model that accurately reflects human preferences.

@@ -1,9 +1,13 @@
 ---
 created: 2025-05-14 11:58:33
 modified: 2025-05-28 01:51:34
-tags: [alignment, reinforcement-learning]
+tags:
+  - alignment
+  - reinforcement-learning
+  - dpo
 ---
-> ***Definition 1.** We say that two reward functions $r(x,y)$ and $r'(x,y)$ are equivalent iff $r(x,y)−r'(x,y) = f(x)$ for some function $f$.* — @RafailovEtAl2024Direct, p. 5
+> [!definition] Definition 1
+> We say that two reward functions $r(x,y)$ and $r'(x,y)$ are equivalent iff $r(x,y)−r'(x,y) = f(x)$ for some function $f$. — @RafailovEtAl2024Direct, p. 5
 
 According to the definition, two reward function $r_{1}$ and $r_{2}$, are considered **equivalent** if their difference depends *only* on the prompt $x$ and not on the response $y$. This difference is expressed as a function $f(x)$.
 

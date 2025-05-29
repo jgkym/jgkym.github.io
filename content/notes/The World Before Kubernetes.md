@@ -1,7 +1,9 @@
 ---
 created: 2025-05-25 23:24:22
 modified: 2025-05-28 01:51:34
-tags: [devops]
+tags:
+  - devops
+  - k8s
 ---
 ### Before
 - **Manual Server Capacity Allocation:** Predicting user numbers was challenging, leading to inefficient resource allocation.

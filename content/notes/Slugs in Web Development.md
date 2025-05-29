@@ -4,11 +4,11 @@ modified: 2025-05-29 01:51:30
 tags:
   - web-dev
 ---
-### TL;DR
-A Slug is the unique, human-readable part of a web address that comes after the domain name, making each page distinctly identifiable.
+>[!tldr] 
+>Slug is the unique, human-readable part of a web address that comes after the domain name, making each page distinctly identifiable.
 
 ### What's Slug?
-+ Imagine a slug as the "nickname" for a specific page on a websit. It's the unique part of a URL that helps you understand what the page is about at a glance.
++ Imagine a slug as the "nickname" for a specific page on a website. It's the unique part of a URL that helps you understand what the page is about at a glance.
 + You'll usually find it right after your domain name, like in `example.com/your-page-name`. Here, `your-page-name` is the slug.
 + While slugs often mirror the page's title, they don't have to. They just need to be unique for that particular website.
 

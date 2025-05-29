@@ -1,9 +1,13 @@
 ---
 created: 2025-05-14 12:54:03
 modified: 2025-05-28 01:51:34
-tags: [alignment, reinforcement-learning]
+tags:
+  - alignment
+  - reinforcement-learning
+  - dpo
 ---
-> ***Lemma 2.** Two reward functions from the same equivalence class induce the same optimal policy under the constrained RL problem.* — @RafailovEtAl2024Direct, p. 5
+> [!lemma] Lemma 2
+> Two reward functions from the same equivalence class induce the same optimal policy under the constrained RL problem. — @RafailovEtAl2024Direct, p. 5
 
 According to the [[Understanding The Equivalence Between Two Reward Models in DPO|Definition]], two reward functions, $r$ and $r'$, belong to the **same equivalence class** if they differ only by a baseline function $f(x)$. In simpler terms, $r'(x,y)=r(x,y)+f(x)$.
 

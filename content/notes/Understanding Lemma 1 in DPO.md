@@ -3,7 +3,8 @@ created: 2025-05-14 12:13:10
 modified: 2025-05-28 01:51:34
 tags: [alignment, reinforcement-learning]
 ---
->***Lemma 1.** Under the Plackett-Luce, and in particular the Bradley-Terry, preference framework, two reward functions from the same class induce the same preference distribution.* — @RafailovEtAl2024Direct, p. 5
+>[!lemma] Lemma 1
+>Under the Plackett-Luce, and in particular the Bradley-Terry, preference framework, two reward functions from the same class induce the same preference distribution. — @RafailovEtAl2024Direct, p. 5
 
 The Plackett-Luce preference framework, including the Bradley-Terry model, is used to model the probability of preferring a specific item (e.g., a response $y$) among several options. This framework typically derives preference patterns based on the differences in reward function values. For instance, in the Bradley-Terry model, the probability $p(y_1>y_{2}∣x)$ that response $y_{1}$ is preferred over $y_{2}$ for a given prompt $x$ is calculated as follows:
 $$
@@ -26,7 +27,8 @@ $$
 As the result shows, the reward difference between the two responses is the same whether calculated with $r$ or $r'$.
 
 Since the Plackett-Luce framework is based on this **'reward difference'** to determine preference patterns, reward functions belonging to the same equivalence class will ultimately induce identical preference probability distributions.
-
+
+
 ### See also
 @RafailovEtAl2024Direct, p. 17
 

@@ -1,10 +1,13 @@
 ---
 created: 2025-05-25 23:48:13
 modified: 2025-05-28 01:51:34
-tags: [alignment, reinforcement-learning]
+tags:
+  - alignment
+  - reinforcement-learning
+  - dpo
 ---
-### TL;DR 
-DPO employs a clever trick to enable the training of an optimal policy without needing a separate reward model. The core idea is to express the reward function indirectly.
+> [!tldr] 
+> DPO employs a clever trick to enable the training of an optimal policy without needing a separate reward model. The core idea is to express the reward function indirectly.
 
 ### How DPO Enables Learning Without a Reward Model
 DPO re-formulates the equations so that the same learning can occur without directly using a reward model. It uses a technique called **change of variables** to express the reward function solely in terms of three components:

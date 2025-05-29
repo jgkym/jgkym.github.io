@@ -1,7 +1,10 @@
 ---
 created: 2025-05-25 23:48:59
 modified: 2025-05-28 01:51:34
-tags: [finetuning, reinforcement-learning]
+tags:
+  - finetuning
+  - reinforcement-learning
+  - dpo
 ---
 ### Optimization Objective
 $$

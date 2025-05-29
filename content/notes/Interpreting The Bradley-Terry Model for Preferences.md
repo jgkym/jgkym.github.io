@@ -1,7 +1,10 @@
 ---
 created: 2025-05-25 23:49:04
 modified: 2025-05-28 01:51:34
-tags: [alignment, reinforcement-learning]
+tags:
+  - alignment
+  - reinforcement-learning
+  - dpo
 ---
 ### Bradley-Terry (BT) Model
 $$
