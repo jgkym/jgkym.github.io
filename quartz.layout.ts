@@ -21,7 +21,7 @@ export const homePageLayout: PageLayout = {
   ],
   afterBody: [
     Component.TopTagsList({
-            limit: 10,
+            limit: 5,
             align: "center",
             displayCount: false,
           }),

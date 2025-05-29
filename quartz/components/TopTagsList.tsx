@@ -84,6 +84,10 @@ export default ((userOpts?: TopTagsListOptions) => {
 
     return (
       <div class={`top-tags-list align-${opts.align} $(opts.displayClass}`}>
+        <style>
+          {`@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');`}
+        </style>
+        
         {displayTags.length === 0 ? (
           <p class="no-tags">No tags found.</p>
         ) : (
@@ -94,7 +98,7 @@ export default ((userOpts?: TopTagsListOptions) => {
                   href={resolveRelative(fileData.slug!, `${tagsBaseSlug}/${tag.slug}` as FullSlug)}
                   class="tag-link"
                 >
-                  {tag.name}
+                  #{tag.name}
                 </a>
                 {opts.displayCount && (<span class="tag-count">({tag.count})</span>)}
               </li>
