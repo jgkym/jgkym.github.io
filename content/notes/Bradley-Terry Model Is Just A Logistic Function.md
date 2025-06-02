@@ -11,5 +11,6 @@ p^{*}(y_{1}>y_{2}|x) = \frac{\exp(r^{*}(x,y_{1}))}{\exp(r^{*}(x,y_{1}))+\exp(r^{
 $$
 
 [@RafailovEtAl2024Direct{3-4}]
+  
 
 ### Reference
